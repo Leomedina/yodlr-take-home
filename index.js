@@ -14,6 +14,8 @@ var home = require('./routes/home');
 var app = express();
 var log = logger(app);
 
+app.use(express.static('public'))
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());

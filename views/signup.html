@@ -1,14 +1,21 @@
 {% extends "./index.html"%} 
 {%block content%}
-<h1>Yodlr Registration Portal</h1>
-<form action="/users" method="POST">
-  <label>
-    <p>Email: <input type="email" name="email" required></label</p></label>
-    <p>First Name: <input type="text" name="firstName" required></label</p></label>
-    <p>Last Name: <input type="text" name="lastName" required></label</p></label>
-  <p><button type="submit">Submit</button></p>
+<div class="grid-body">
+  <h1>Yodlr Registration Portal</h1>
+
+<form class="form-style-4" action="/users" method="post">
+<label for="firstName">Enter Your First Name:<input type="text" name="firstName" required="true" />
+</label>
+<label for="lastName">Enter Your Last Name<input type="text" name="lastName" required="true" />
+</label>
+<label for="email">Email Address</span><input type="email" name="email" required="true" />
+</label>
+<label>
+<input type="submit" value="Submit" />
+</label>
 </form>
-<p>
-  <a href="/admin">Admin Page</a>
-</p>
+  <p>
+    <a href="/admin">Admin Page</a>
+  </p>
+</div>
 {%endblock%}
